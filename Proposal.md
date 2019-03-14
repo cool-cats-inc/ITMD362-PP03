@@ -6,6 +6,7 @@ For our website, we want to create a website for a restaurant called "Spicy Chic
 
 The uncomfortable rein of Chic-Fil-A will be no more. Once Spicy Chicken takes over the Chicagoland Area as the #1 chicken restaurant, the world will be next. 
 
+Group Repository: https://github.com/cool-cats-inc/ITMD362-PP03
 Ali's Repository: https://github.com/abilling/ITMD362-PP03
 Kem's Repository: https://github.com/Treehousetak/ITMD362-PP03
 Zach's Repository: https://github.com/Zgasp/ITMD362-PP03
