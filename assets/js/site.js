@@ -29,7 +29,7 @@ function validate(value,check,condition) {
 }
 function validate_zip(value){
   var zip = rmnumber(value);
-  return validate(zip.length,eq,5);
+  return validate(zip.length,equals,5);
 };
 
 if('fetch' in window) {
