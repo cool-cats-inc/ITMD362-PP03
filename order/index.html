@@ -8,28 +8,27 @@
   <link href="" rel="stylesheet" />
 </head>
 <body>
-  <nav>
-    <ul id="navigation">
-      <li><a href="../menu/">Menu</a></li>
-      <li><a href="">Order</a></li>
-      <li><a href="../">Home</a></li>
-      <li><a href="../aboutus/">About Us</a></li>
-    </ul>
-  </nav>
-  <header>
+  <header id="head">
+    <h1> Spicy Chicken</h1>
+    <nav id="navigation">
+        <ul>
+          <li><a href="../menu/">Menu</a></li>
+          <li><a href="">Order</a></li>
+          <li><a href="../">Home</a></li>
+          <li><a href="../aboutus/">About Us</a></li>
+        </ul>
+    </nav>
   </header>
   <main>
     <form>
       <fieldset>
-        <legend>Delivery Adress</legend>
-        <label>Zip Code</label>
-        <input type="text" name="zip">
-        <label>City</label>
-        <input type="text" name="city">
-        <label>State</label>
-        <input type="text" name="state">
-        <label>Country</label>
-        <input type="text" name="country">
+        <legend>Delivery Adress</legend>    
+        <label for="zip">Zip code</label>
+        <input type="text" name="zip" id="zip" />
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" />
+        <label for="state">State</label>
+        <input type="text" name="state" id="state" />
       </fieldset>
     </form>
   </main>
