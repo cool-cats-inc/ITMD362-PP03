@@ -17,7 +17,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   display: inline;
   padding: 0em 4em 0em 4em;
 }
-<<<<<<< HEAD
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -40,8 +39,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     width: 100%;
   }
 }
-=======
 h1{
   font-size: 1.625em;
 }
->>>>>>> upstream/master
