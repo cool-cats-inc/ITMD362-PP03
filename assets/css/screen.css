@@ -52,7 +52,10 @@ h4 {
   margin-top: 1.6111111em;
   margin-bottom: 0em;
 }
-
+main {
+  max-width: 80%;
+  margin: auto;
+}
 #head{
   font-size: 2em;
   border: 0.2em ridge;
@@ -91,6 +94,10 @@ h4 {
   .topnav a {
     float: none;
     align-items: center;
+  }
+  main {
+    max-width: 90%;
+    margin: auto;
   }
 }
 h1{
