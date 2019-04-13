@@ -11,6 +11,18 @@ html {
   font-size: 18px;
   line-height: 29px;
 }
+a{
+  line-height: 0;
+  color:white;
+  text-decoration: none;
+}
+p, ul, ol {
+  margin-top: 0em;
+}
+a:focus, a:hover{
+  color: #560202;
+  text-shadow: 0.15em 0.15em #F8A200;
+}
 body {
   background-color: #F8A200;
   font-size: 1em;
@@ -40,12 +52,20 @@ h4 {
   margin-top: 1.6111111em;
   margin-bottom: 0em;
 }
+
 #head{
-  padding: 1.25em 1.125em 1.25em 1.125em;
+  font-size: 2em;
   border: 0.2em ridge;
+  text-shadow: 0.15em 0.15em black;
+  padding-bottom: 1.115em;
   text-align: center;
   background-color: #F86C00;
   color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+#head h1{
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 #navigation li{
   display: inline;
