@@ -62,12 +62,12 @@ h4 {
   display: flex;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.778em 0.889em;
   text-decoration: none;
 }
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 33.333em) {
   .topnav a {
     float: none;
     align-items: center;
