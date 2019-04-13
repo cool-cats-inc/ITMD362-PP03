@@ -28,12 +28,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   display: flex;
   color: white;
   text-align: center;
-  padding: 0.875em 1.000em;
+  padding: 0.778em 0.889em;
   text-decoration: none;
 }
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 37.500em) {
+@media screen and (max-width: 33.333em) {
   .topnav a {
     float: none;
     align-items: center;
