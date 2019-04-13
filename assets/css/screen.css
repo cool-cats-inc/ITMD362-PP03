@@ -6,12 +6,46 @@
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 /* Begin site styles below */
+/* 5:6 minor third ratio, 1.2 */
+html {
+  font-size: 18px;
+  line-height: 29px;
+}
+body {
+  background-color: #F8A200;
+  font-size: 1em;
+  line-height: 1.6111111em;
+}
+h1{
+  font-size: 1.7222222em;
+  line-height: 1.87096774em;
+  margin-top: 0.93548387em;
+  margin-bottom: 1.87096774em;
+}
+h2{
+  font-size: 1.4444444em;
+  line-height: 1.11538462em;
+  margin-top: 1.11538462em;
+  margin-bottom: 1.11538462em;
+}
+h3{
+  font-size: 1.22222222em;
+  line-height: 1.31818182em;
+  margin-top: 1.31818182em;
+  margin-bottom: 0em;
+}
+h4 {
+  font-size: 1em;
+  line-height: 1.6111111em;
+  margin-top: 1.6111111em;
+  margin-bottom: 0em;
+}
 #head{
-  font-size: 1.8em;
   padding: 1.25em 1.125em 1.25em 1.125em;
-  line-height: 2.5em;
   border: 0.2em ridge;
   text-align: center;
+  background-color: #F86C00;
+  color: white;
 }
 #navigation li{
   display: inline;
@@ -28,12 +62,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   display: flex;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.778em 0.889em;
   text-decoration: none;
 }
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 33.333em) {
   .topnav a {
     float: none;
     align-items: center;
