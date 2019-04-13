@@ -71,26 +71,6 @@ h4 {
   display: inline;
   padding: 0em 4em 0em 4em;
 }
-#navigation {
-  overflow: hidden;
-}
-
-/* Navbar links */
-#navigation a {
-  float: left;
-  display: flex;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  #navigation a {
-    float: none;
-    align-items: center;
-  }
-}
 h1{
   font-size: 1.625em;
 }
