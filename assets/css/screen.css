@@ -71,6 +71,8 @@ h4 {
   display: inline;
   padding: 0em 4em 0em 4em;
 }
-h1{
-  font-size: 1.625em;
+.wrapper{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  margin: auto;
 }
