@@ -1,3 +1,4 @@
+var total = 0;
 document.addEventListener('DOMContentLoaded' ,function() {
   console.log("DOM is loaded my dude");
   var location = {
@@ -5,6 +6,8 @@ document.addEventListener('DOMContentLoaded' ,function() {
     state: document.querySelector('#state'),
     city: document.querySelector('#city')
   }
+
+if(document.querySelector('#zip')) {
 
 function rmnumber(value) {
     return value.replace(/\D/g,'');
@@ -64,4 +67,14 @@ if('fetch' in window) {
       }
   });
 }
+}
+if(document.querySelector('#order1')) {
+  var order = {
+    1: document.querySelector('#order1')
+  }
+  order.1.addEventListener('click', function() {
+    ++total;
+  })
+}
+
 });

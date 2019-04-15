@@ -72,14 +72,13 @@ main {
 }
 #navigation li{
   display: inline;
-  padding: 0em 4em 0em 4em;
+  padding: 0em 3em 0em 3em;
 }
-.topnav {
+/*.topnav {
   overflow: hidden;
   background-color: #333;
 }
 
-/* Navbar links */
 .topnav a {
   float: left;
   display: flex;
@@ -87,7 +86,7 @@ main {
   text-align: center;
   padding: 0.778em 0.889em;
   text-decoration: none;
-}
+} */
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
