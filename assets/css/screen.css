@@ -74,6 +74,7 @@ main {
   display: inline;
   padding: 0em 4em 0em 4em;
 }
+<<<<<<< HEAD
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -100,6 +101,8 @@ main {
     margin: auto;
   }
 }
+=======
+>>>>>>> 7097e9f99f87a2738d4e037bf33260b444642c47
 h1{
   font-size: 1.625em;
 }
