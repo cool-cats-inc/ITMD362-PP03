@@ -1,4 +1,7 @@
+//localStorage.clear();
 var total = 0;
+var torder = localStorage.getItem('order_total');
+
 document.addEventListener('DOMContentLoaded' ,function() {
   console.log("DOM is loaded my dude");
   var location = {
@@ -7,7 +10,17 @@ document.addEventListener('DOMContentLoaded' ,function() {
     city: document.querySelector('#city')
   }
 
+if (torder === null) {
+    torder = 0;
+  }
+
+
+var cart = document.getElementById('cartT');
+cart.innerHTML += torder;
+
 if(document.querySelector('#zip')) {
+
+console.log(localStorage.getItem('order_total'));
 
 function rmnumber(value) {
     return value.replace(/\D/g,'');
@@ -70,10 +83,15 @@ if('fetch' in window) {
 }
 if(document.querySelector('#order1')) {
   var order = {
-    1: document.querySelector('#order1')
+    one: document.querySelector('#order1')
   }
-  order.1.addEventListener('click', function() {
-    ++total;
+
+  order.one.addEventListener('click', function() {
+    torder++
+    localStorage.setItem('order_total', torder);
+    console.log(torder);
+    cart.innerHTML -= torder;
+    cart.innerHTML += torder;
   })
 }
 
