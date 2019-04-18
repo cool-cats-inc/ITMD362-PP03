@@ -1,5 +1,5 @@
-//localStorage.clear();
-var total = 0;
+localStorage.clear();
+var $total = localStorage.getItem('order$');
 var torder = localStorage.getItem('order_total');
 
 document.addEventListener('DOMContentLoaded' ,function() {
@@ -13,10 +13,14 @@ document.addEventListener('DOMContentLoaded' ,function() {
 if (torder === null) {
     torder = 0;
   }
+if ($total === null) {
+  $total = 0;
+}
 
-
+var cart$ = document.getElementById('cart$');
 var cart = document.getElementById('cartT');
 cart.innerHTML += torder;
+cart$.innerHTML += $total;
 
 if(document.querySelector('#zip')) {
 
@@ -88,10 +92,15 @@ if(document.querySelector('#order1')) {
 
   order.one.addEventListener('click', function() {
     torder++
+    $total += 12.95;
+    localStorage.setItem('order$', $total);
     localStorage.setItem('order_total', torder);
     console.log(torder);
+    console.log($total);
     cart.innerHTML -= torder;
     cart.innerHTML += torder;
+    cart$.innerHTML -= $total;
+    cart$.innerHTML += $total;
   })
 }
 
