@@ -1,3 +1,10 @@
+//localStorage.clear();
+var $total = localStorage.getItem('order$');
+var torder = localStorage.getItem('order_total');
+var receipt = localStorage.getItem('order');
+
+
+
 document.addEventListener('DOMContentLoaded' ,function() {
   console.log("DOM is loaded my dude");
   var location = {
@@ -6,13 +13,34 @@ document.addEventListener('DOMContentLoaded' ,function() {
     city: document.querySelector('#city')
   }
 
+if (torder === null) {
+    torder = 0;
+  }
+if ($total === null) {
+    $total = 0;
+}
+if (receipt === null) {
+  receipt = "";
+}
+if (typeof $total === 'string') {
+  $total = Number.parseFloat($total);
+}
+
+
+document.getElementById('cartT').innerHTML += torder;
+document.getElementById('cart$').innerHTML += parseFloat($total).toFixed(2);
+document.getElementById('Rsummary').innerHTML += receipt;
+if(document.querySelector('#zip')) {
+
+console.log(localStorage.getItem('order_total'));
+
 function rmnumber(value) {
     return value.replace(/\D/g,'');
 }
 
 function equals(value,condition) {
     return value === condition;
-  }
+}
 
 function validate(value,check,condition) {
   if (equals(typeof(check.test),'function')) {
@@ -64,4 +92,27 @@ if('fetch' in window) {
       }
   });
 }
+}
+if(document.querySelector('#order1')) {
+  var order = {
+    one: document.querySelector('#order1')
+  }
+
+  order.one.addEventListener('click', function() {
+    torder++
+    $total += 12.95;
+    receipt += "Kung Pao Chicken, ";
+    localStorage.setItem('order$', $total);
+    localStorage.setItem('order_total', torder);
+    localStorage.setItem('order', receipt);
+    console.log(receipt);
+    console.log(torder);
+    console.log($total.toString());
+    cart.innerHTML -= torder;
+    cart.innerHTML += torder;
+    cart$.innerHTML -= parseFloat($total).toFixed(2);
+    cart$.innerHTML += parseFloat($total).toFixed(2);
+  })
+}
+
 });
