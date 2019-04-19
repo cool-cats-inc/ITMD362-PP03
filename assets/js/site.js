@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded' ,function() {
   var location = {
     zip: document.querySelector('#zip'),
     state: document.querySelector('#state'),
-    city: document.querySelector('#city')
+    city: document.querySelector('#city'),
+    address: document.querySelector('#address')
   }
 
 if (torder === null) {
