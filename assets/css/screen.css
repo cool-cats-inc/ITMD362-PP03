@@ -72,9 +72,12 @@ h4 {
   padding: 0em 4em 0em 4em;
 }
 .wrapper{
-  width: 90%;
+  width: 60%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   margin: auto;
-  background: lightyellow;
+  background: lightgrey;
+}
+.menuImg{
+  width: 10em;
 }
