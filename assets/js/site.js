@@ -29,8 +29,9 @@ if (typeof $total === 'string') {
 
 document.getElementById('cartT').innerHTML += torder;
 document.getElementById('cart$').innerHTML += parseFloat($total).toFixed(2);
-document.getElementById('Rsummary').innerHTML += receipt;
+
 if(document.querySelector('#zip')) {
+  document.getElementById('Rsummary').innerHTML += receipt;
 
 console.log(localStorage.getItem('order_total'));
 
