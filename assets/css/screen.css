@@ -72,7 +72,9 @@ h4 {
   padding: 0em 4em 0em 4em;
 }
 .wrapper{
+  width: 90%;
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: 33% 33% 33%;
   margin: auto;
+  background: lightyellow;
 }
