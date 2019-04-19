@@ -102,23 +102,12 @@ main {
 }
 
 .wrapper{
-  width: 60%;
+  width: 75%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   margin: auto;
-<<<<<<< HEAD
   background: lightgrey;
 }
 .menuImg{
   width: 10em;
 }
-||||||| merged common ancestors
-}
-=======
-}
-
-h1{
-  font-size: 1.625em;
-}
-
->>>>>>> 2b64dfdb66843ffc466bdd7505cf9c699d288749
