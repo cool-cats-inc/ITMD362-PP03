@@ -20,11 +20,14 @@
     </nav>
   </header>
   <section>
+    <p id="cartT"> Total Cart: </p>
+    <p id="cart$"> Total Cost: $</p>
   <!-- input button goes here -->
   </section>
   <main>
     <h3>ENTREES</h3>
     <ul>
+      <li class="wrapper">
       <li>
         <figure>
         <img src="../assets/images/kung-pao-chicken.jpeg" alt="Kung Pao Chicken" />
@@ -33,7 +36,9 @@
         <h3>Kung Pao Chicken</h3>
         <p>Sweet and Spicy boneless chicken with dried chillies, peppercorn, and leeks. (Peanuts optional). </p>
         <p>12.95</p>
+        <input type=button id="order1" name="order1" value="Order"/>
       </li>
+      <li class="wrapper">
       <li>
         <figure>
         <img src="../assets/images/sweet-and-sour-chicken.jpeg" alt="Sweet and Sour Chicken" />
@@ -43,6 +48,12 @@
         <p>13.95</p>
       </figure>
       </li>
+      <li class="wrapper">
+        <h3>General Tso's Chicken</h3>
+        <p>Dark Chicken meat, shallots, hot peppers, rce vinegar and spices. Sweet and spicy.</p>
+        <p>13.95</p>
+      </li>
+      <li class="wrapper">
       <li>
         <figure>
         <img src="../assets/images/general-tso-chicken.jpeg" alt="General Tsos Chicken" />
@@ -60,23 +71,25 @@
         <p>12.95</p>
       </figure>
       </li>
-      <li>
+      <li class="wrapper">
         <h3>Dim Sum</h3>
         <p>bite-sized pork, chicken or veggies served in small steamer baskets. 6 dumplings.</p>
         <p>12.95</p>
       </li>
-        <h3>DRINKS</h3>
-        <li>
+    </ul>
+    <ul>
+      <h3>DRINKS</h3>
+      <li class="wrapper">
         <h2>Boba Tea</h2>
         <p>Milk with tea of your choice, with or without tapioca.</p>
         <p>3.50</p>
       </li>
-      <li>
+      <li class="wrapper">
         <h2>Tea</h2>
         <p>Your choice between oolong, black and green tea. Hot or cold. </p>
         <p>2.50</p>
       </li>
-      <li>
+      <li class="wrapper">
         <h2>Soda</h2>
         <p>Coke and Sprite products available, one free refil.</p>
         <p>1.00</p>
