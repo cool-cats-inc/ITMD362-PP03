@@ -1,4 +1,4 @@
-//localStorage.clear();
+localStorage.clear();
 var $total = localStorage.getItem('order$');
 var torder = localStorage.getItem('order_total');
 var receipt = localStorage.getItem('order');
@@ -109,10 +109,10 @@ if(document.querySelector('#order1')) {
     console.log(receipt);
     console.log(torder);
     console.log($total.toString());
-    cart.innerHTML -= torder;
-    cart.innerHTML += torder;
-    cart$.innerHTML -= parseFloat($total).toFixed(2);
-    cart$.innerHTML += parseFloat($total).toFixed(2);
+    document.getElementById('cartT').innerHTML -= torder;
+    document.getElementById('cartT').innerHTML += torder;
+    document.getElementById('cart$').innerHTML -= parseFloat($total).toFixed(2);
+    document.getElementById('cart$').innerHTML += parseFloat($total).toFixed(2);
   })
 }
 
