@@ -90,6 +90,7 @@ main {
 } */
 
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+/*
 @media screen and (max-width: 600px) {
   .topnav a {
     float: none;
@@ -100,6 +101,7 @@ main {
     margin: auto;
   }
 }
+*/
 
 .wrapper{
   width: 75%;

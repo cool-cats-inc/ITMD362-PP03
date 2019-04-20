@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Spicy Chicken</title>
+  <title>Spicy Chicken - Menu</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
-  <link rel="stylesheet" href="assets/css/screen.css" />
+  <link rel="stylesheet" href="../assets/css/screen.css" />
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" />
 </head>
 <body>
@@ -12,78 +12,108 @@
     <h1> Spicy Chicken</h1>
     <nav id="navigation">
       <ul>
-        <li><a href="order/">Order</a></li>
-        <li><a href="">Home</a></li>
-        <li><a href="aboutus/">About Us</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="../order/">Order</a></li>
+        <li><a href="../">Home</a></li>
+        <li><a href="../aboutus/">About Us</a></li>
       </ul>
     </nav>
   </header>
   <section>
     <p id="cartT"> Total Cart: </p>
+    <p id="cart$"> Total Cost: $</p>
+  <!-- input button goes here -->
   </section>
   <main>
-      <h3>ENTREES</h3>
-      <ul>
-        <li>
-          <figure>
-          <img src="../assets/images/kung-pao-chicken.jpeg" alt="Kung Pao Chicken" />
+    <h3>ENTREES</h3>
+    <ul>
+      <li class="wrapper">
+        <p>Sweet and Spicy boneless chicken with dried chillies, peppercorn, and leeks. (Peanuts optional). </p>
+        <figure>
+          <img class="menuImg" src="../assets/images/KPchicken.jpeg" alt="Kung Pao Chicken" />
           <figcaption> Kung Pao Chicken</figcaption>
         </figure>
-          <h3>Kung Pao Chicken</h3>
-          <p>Sweet and Spicy boneless chicken with dried chillies, peppercorn, and leeks. (Peanuts optional). </p>
+        <label>
           <p>12.95</p>
-        </li>
-        <li>
-          <figure>
-          <img src="../assets/images/sweet-and-sour-chicken.jpeg" alt="Sweet and Sour Chicken" />
-          <figcaption> Sweet and Sour Chicken</figcaption>
-          <h3>Sweet and Sour</h3>
-          <p>Your choice of either pork or chicken, lean cuts with onions, bell peppers and pineapple chunks.</p>
+          <input type=button id="order1" name="order1" value="Order"/>
+        </label>
+      </li>
+      <li class="wrapper">
+      <p>Your choice of either pork or chicken, lean cuts with onions, bell peppers and pineapple chunks.</p>
+        <figure>
+        <img class="menuImg" src="../assets/images/SSchicken.jpeg" alt="Sweet and Sour Chicken" />
+        <figcaption> Sweet and Sour Chicken</figcaption>
+      </figure>
+        <label>
           <p>13.95</p>
-        </figure>
-        </li>
-        <li>
-          <figure>
-          <img src="../assets/images/general-tso-chicken.jpeg" alt="General Tsos Chicken" />
+          <input type=button id="order1" name="order1" value="Order"/>
+        </label>
+      </li>
+      <li class="wrapper">
+        <p>Dark Chicken meat, shallots, hot peppers, rce vinegar and spices. Sweet and spicy.</p>
+        <figure>
+          <img class="menuImg" src="../assets/images/GTchicken.jpeg" alt="General Tsos Chicken" />
           <figcaption> General Tso's Chicken</figcaption>
-          <h3>General Tso's Chicken</h3>
-          <p>Dark Chicken meat, shallots, hot peppers, rce vinegar and spices. Sweet and spicy.</p>
-          <p>13.95</p>
         </figure>
-        <li>
-          <figure>
-          <img src="../assets/images/teriyaki-chicken.jpeg" alt="Teriyaki Chicken" />
+        <label>
+        <p>13.95</p>
+          <input type=button id="order1" name="order1" value="Order"/>
+        </label>
+      </li>
+      <li class="wrapper">
+        <p>Your choice of either beef or chicken, sweet glaze.</p>
+        <figure>
+          <img class="menuImg" src="../assets/Tchicken.jpeg" alt="Teriyaki Chicken" />
           <figcaption>  Teriyaki Chicken</figcaption>
-          <h3>Teriyaki</h3>
-          <p>Your choice of either beef or chicken, sweet glaze.</p>
-          <p>12.95</p>
         </figure>
-        </li>
-        <li>
-          <h3>Dim Sum</h3>
-          <p>bite-sized pork, chicken or veggies served in small steamer baskets. 6 dumplings.</p>
+        <label>
           <p>12.95</p>
-        </li>
-          <h3>DRINKS</h3>
-          <li>
-          <h2>Boba Tea</h2>
-          <p>Milk with tea of your choice, with or without tapioca.</p>
+          <input type=button id="order1" name="order1" value="Order"/>
+        </label>
+      </li>
+      <li class="wrapper">
+      <p>bite-sized pork, chicken or veggies served in small steamer baskets. 6 dumplings.</p>
+        <figure>
+          <img class="menuImg" src="../assets/DimSum.jpeg" alt="Dim Sum" />
+          <figcaption> Dim Sum</figcaption>
+        </figure>
+        <label>
+          <p>12.95</p>
+          <input type=button id="order1" name="order1" value="Order"/>
+        </label>
+      </li>
+      <h3>DRINKS</h3>
+      <li class="wrapper">
+        <p>Milk with tea of your choice, with or without tapioca.</p>
+        <figure>
+          <img class="menuImg" src="../assets/BobaTea.jpeg" alt=" Boba Tea" />
+          <figcaption> Boba Tea</figcaption>
+        </figure>
+        <label>
           <p>3.50</p>
-        </li>
-        <li>
-          <h2>Tea</h2>
-          <p>Your choice between oolong, black and green tea. Hot or cold. </p>
+          <input type=button id="order1" name="order1" value="Order"/>
+        </label>
+      </li>
+      <li class="wrapper">
+        <h2>Tea</h2>
+        <p>Your choice between oolong, black and green tea. Hot or cold. </p>
+        <label>
           <p>2.50</p>
-        </li>
-        <li>
-          <h2>Soda</h2>
-          <p>Coke and Sprite products available, one free refil.</p>
+          <input type=button id="order1" name="order1" value="Order"/>
+        </label>
+      </li>
+      <li class="wrapper">
+        <h2>Soda</h2>
+        <p>Coke and Sprite products available, one free refil.</p>
+        <label>
           <p>1.00</p>
-        </li>
-      </ul>
-    </main>
+          <input type=button id="order1" name="order1" value="Order"/>
+        </label>
+      </li>
+    </ul>
+  </main>
   <footer>
   </footer>
-  <script src="assets/js/site.js"></script>
+  <script src="../assets/js/site.js"></script>
 </body>
 </html>
