@@ -111,8 +111,8 @@ main {
   background: lightgrey;
 }
 .wrapper p{
+  padding: 0.1111111em; /* 2px/18px */
   margin: auto;
-
 }
 .menuImg{
   width: 10em;
@@ -143,6 +143,9 @@ h1{
   }
 }
 
-form label{
+/* ---FORM CSS---*/
+form label, form input{
+  text-align: center;
+  margin: auto;
   display: block;
 }
