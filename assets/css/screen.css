@@ -108,6 +108,7 @@ main {
   display: grid;
   grid-template-columns: 40% 40% 20%;
   margin: auto;
+  margin-bottom: 20px;
   background: lightgrey;
 }
 .wrapper p, .wrapper label, .wrapper figure, .wrapper figcaption{
