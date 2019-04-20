@@ -142,3 +142,7 @@ h1{
     font-size: 1em;/* 18px/18px*/
   }
 }
+
+form label{
+  display: block;
+}
