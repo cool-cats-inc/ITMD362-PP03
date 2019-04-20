@@ -118,6 +118,10 @@ main {
   justify-content: center;
   width: 10em;
 }
+.locations{
+  margin:auto;
+  justify-content: center;
+}
 h1{
   font-size: 1.625em;/* 29.25px/18px*/
 }
