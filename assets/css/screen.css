@@ -84,7 +84,7 @@ main {
 .wrapper{
   padding: 0;
   display: grid;
-  grid-template-columns:20% 70% 10%;
+  grid-template-columns:30% 50% 20%;
   background-color: #ffdb96;
   margin: auto;
   margin-bottom: 1.111111em; /* 20/18 =1.11111 */
@@ -111,7 +111,9 @@ main {
     font-size: 1em;
     padding-left: 1em;
   }
-
+  .wrapper {
+    grid-template-columns:20% 60% 20%;
+  }
 }
 @media screen and (min-width: 960px) {
   main{
