@@ -10,7 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 18px; /* Setting base em unit standards */
   line-height: 29px;
-  font-family: "Cagliostro", Helvetica Arial, sans-serif
+  font-family: "Cagliostro", Helvetica, Arial, sans-serif
 }
 a{
   line-height: 0;
