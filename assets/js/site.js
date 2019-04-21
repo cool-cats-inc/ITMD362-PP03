@@ -28,7 +28,7 @@ if (typeof $total === 'string') {
 
 
 document.getElementById('cartT').innerHTML += torder;
-document.getElementById('cart$').innerHTML += parseFloat($total).toFixed(2);
+document.getElementById('cartC').innerHTML += parseFloat($total).toFixed(2);
 
 if(document.querySelector('#zip')) {
   document.getElementById('Rsummary').innerHTML += receipt;
@@ -111,8 +111,8 @@ if(document.querySelector('#order1')) {
     console.log($total.toString());
     document.getElementById('cartT').innerHTML -= torder;
     document.getElementById('cartT').innerHTML += torder;
-    document.getElementById('cart$').innerHTML -= parseFloat($total).toFixed(2);
-    document.getElementById('cart$').innerHTML += parseFloat($total).toFixed(2);
+    document.getElementById('cartC').innerHTML -= parseFloat($total).toFixed(2);
+    document.getElementById('cartC').innerHTML += parseFloat($total).toFixed(2);
   })
 }
 

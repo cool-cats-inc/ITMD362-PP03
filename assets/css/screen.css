@@ -10,6 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 18px; /* Setting base em unit standards */
   line-height: 29px;
+  font-family: "Cagliostro", Helvetica Arial, sans-serif
 }
 a{
   line-height: 0;
@@ -25,46 +26,46 @@ a:focus, a:hover{
 }
 body {
   background-color: #F8A200;
-  font-size: 1em;/* 18px/18px*/
-  line-height: 1.6111111em;/* 29px/18px*/
+  font-size: 0.694em;/* 1 /1.2 = 0.833333 / 1.2*/
+  line-height: 1.1188271528em /* 1.611111111 / 1.2 = / 1.2*/
 }
 h1{
-  font-size: 1.7222222em;
-  line-height: 1.87096774em;
+  font-size: 1.222222222em;
+  line-height: 1.31818182em;
   margin-top: 0.93548387em;
-  margin-bottom: 1.87096774em;
+  margin-bottom: 1.11538462em;
 }
 h2{
-  font-size: 1.4444444em;
+  font-size: 1em;
   line-height: 1.11538462em;/* 16.143px/18px*/
   margin-top: 1.11538462em;/* 16.143px/18px*/
   margin-bottom: 1.11538462em;/* 16.143px/18px*/
 }
 h3{
-  font-size: 1.22222222em;
-  line-height: 1.31818182em;
-  margin-top: 1.31818182em;
+  font-size: 0.833333333em; /* 1 / 1.2 */
+  line-height: 1.11538462em;
+  margin-top: 1.11538462em;
   margin-bottom: 0em;/* 0px/18px*/
 }
 h4 {
   font-size: 1em;/* 18px/18px*/
-  line-height: 1.6111111em;/* 29px/18px*/
-  margin-top: 1.6111111em;/* 29px/18px*/
+  line-height: 1.11538462em;/* 29px/18px*/
+  margin-top: 1.11538462em;/* 29px/18px*/
   margin-bottom: 0em;/* 0px/18px*/
 }
 main {
-  max-width: 90%;
+  max-width: 80%;
   margin: auto;
 }
 #head{
-  font-size: 2em;
-  border: 0.2em ridge;
+  font-size: 1.222222em;
+  border: 0.1em ridge;
   text-shadow: 0.15em 0.15em black;/* 2.7px/18px*/
-  padding-bottom: 1.115em;/* 16.143px/18px*/
+  padding-bottom: 1em;/* 16.143px/18px*/
   text-align: center;
   background-color: #F86C00;
   color: white;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Permanent Marker', cursive, Helvetica,  Arial, sans-serif;
 }
 #head h1{
   margin-top: 0em;/* 0px/18px*/
@@ -72,85 +73,113 @@ main {
 }
 #navigation li{
   display: inline;
-  padding: 0em 3em 0em 3em;
+  padding: 0em 1em 0em 1em;
 }
-
-/*.topnav {
-  overflow: hidden;
-  background-color: #333;
+#cartT {
+  margin: 1em 1em 0em 1em;
 }
-
-.topnav a {
-  float: left;
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 0.778em 0.889em;
-  text-decoration: none;
-} */
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-/*
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    align-items: center;
-  }
-  main {
-    max-width: 90%;
-    margin: auto;
-  }
+#cartC {
+  margin: 0em 1em 1em 1em;
 }
-*/
-
 .wrapper{
   padding: 0;
   display: grid;
-  grid-template-columns: 40% 40% 20%;
+  grid-template-columns:20% 70% 10%;
+  background-color: #ffdb96;
   margin: auto;
-  margin-bottom: 20px;
-  background: lightgrey;
+  margin-bottom: 1.111111em; /* 20/18 =1.11111 */
 }
 .wrapper p, .wrapper label, .wrapper figure, .wrapper figcaption{
   padding: 0.1111111em; /* 2px/18px */
   margin: auto;
 }
 .menuImg{
-  justify-content: center;
-  width: 10em;
+  padding: 1em;
+  width: 5em;
 }
 .locations{
   margin:auto;
   justify-content: center;
 }
-h1{
-  font-size: 1.625em;/* 29.25px/18px*/
+.menutitles {
+  font-size: 0.894em;
+  padding-left: 0.894em;
 }
 @media screen and (min-width: 640px) {
-  main{
-    width: 80%;
-  }
-  .wrapper{
-    background: lightblue;
+
+  .menutitles {
+    font-size: 1em;
+    padding-left: 1em;
   }
 
 }
-@media screen and (min-width: 640px) and (max-width:960px){
+@media screen and (min-width: 960px) {
   main{
-    width: 80%;
+    width: 90%;
   }
-  .wrapper{
-    background: pink;
+  body {
+    background-color: #F8A200;
+    font-size: 1.2em;/* 18px/18px*/
+    line-height: 1.6111111em;/* 29px/18px*/
+  }
+  h1{
+    font-size: 1.7222222em;
+    line-height: 1.87096774em;
+    margin-top: 0.93548387em;
+    margin-bottom: 1.87096774em;
+  }
+  h2{
+    font-size: 1.4444444em;
+    line-height: 1.11538462em;/* 16.143px/18px*/
+    margin-top: 1.11538462em;/* 16.143px/18px*/
+    margin-bottom: 1.11538462em;/* 16.143px/18px*/
+  }
+  h3{
+    font-size: 1.22222222em;
+    line-height: 1.31818182em;
+    margin-top: 1.31818182em;
+    margin-bottom: 0em;/* 0px/18px*/
+  }
+  h4 {
+    font-size: 1em;/* 18px/18px*/
+    line-height: 1.6111111em;/* 29px/18px*/
+    margin-top: 1.6111111em;/* 29px/18px*/
+    margin-bottom: 0em;/* 0px/18px*/
+  }
+  main {
+    max-width: 90%;
+    margin: auto;
+  }
+  #head{
+    font-size: 2em;
+    border: 0.2em ridge;
+    text-shadow: 0.15em 0.15em black;/* 2.7px/18px*/
+    padding-bottom: 1.115em;/* 16.143px/18px*/
+  }
+  #head h1{
+    margin-top: 0em;/* 0px/18px*/
+    margin-bottom: 0em;/* 0px/18px*/
+  }
+  #navigation li{
+    display: inline;
+    padding: 0em 3em 0em 3em;
   }
   .images{
-    justify-content: left;
+    width: 10em;
     font-size: 1em;/* 18px/18px*/
+  }
+  .menuImg{
+    width: 10em;
+  }
+  .menutitles {
+    font-size: 1.22222222em;
+    padding-left: 1em;
   }
 }
 
 /* ---FORM CSS---*/
 form label, form input{
-  text-align: center;
+  float: left;
   margin: auto;
   display: block;
 }
