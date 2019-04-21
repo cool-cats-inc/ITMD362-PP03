@@ -54,7 +54,7 @@ h4 {
   margin-bottom: 0em;/* 0px/18px*/
 }
 main {
-  max-width: 80%;
+  max-width: 90%;
   margin: auto;
 }
 #head{
@@ -92,6 +92,9 @@ main {
 .wrapper p, .wrapper label, .wrapper figure, .wrapper figcaption{
   padding: 0.1111111em; /* 2px/18px */
   margin: auto;
+}
+.wrapper label input{
+  padding: 0;
 }
 .menuImg{
   padding: 1em;
