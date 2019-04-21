@@ -27,8 +27,8 @@ if (typeof $total === 'string') {
 }
 
 
-document.getElementById('cartT').innerHTML += torder;
-document.getElementById('cartC').innerHTML += parseFloat($total).toFixed(2);
+document.getElementById('cartTn').innerHTML = torder;
+document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
 
 if(document.querySelector('#zip')) {
   document.getElementById('Rsummary').innerHTML += receipt;
@@ -96,7 +96,14 @@ if('fetch' in window) {
 }
 if(document.querySelector('#order1')) {
   var order = {
-    one: document.querySelector('#order1')
+    one: document.querySelector('#order1'),
+    two: document.querySelector('#order2'),
+    three: document.querySelector('#order3'),
+    four: document.querySelector('#order4'),
+    five: document.querySelector('#order5'),
+    six: document.querySelector('#order6'),
+    seven: document.querySelector('#order7'),
+    eight: document.querySelector('#order8')
   }
 
   order.one.addEventListener('click', function() {
@@ -106,13 +113,78 @@ if(document.querySelector('#order1')) {
     localStorage.setItem('order$', $total);
     localStorage.setItem('order_total', torder);
     localStorage.setItem('order', receipt);
-    console.log(receipt);
-    console.log(torder);
-    console.log($total.toString());
-    document.getElementById('cartT').innerHTML -= torder;
-    document.getElementById('cartT').innerHTML += torder;
-    document.getElementById('cartC').innerHTML -= parseFloat($total).toFixed(2);
-    document.getElementById('cartC').innerHTML += parseFloat($total).toFixed(2);
+    document.getElementById('cartTn').innerHTML = torder;
+    document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
+  })
+  order.two.addEventListener('click', function() {
+    torder++
+    $total += 13.95;
+    receipt += "Sweet and Sour Chicken, ";
+    localStorage.setItem('order$', $total);
+    localStorage.setItem('order_total', torder);
+    localStorage.setItem('order', receipt);
+    document.getElementById('cartTn').innerHTML = torder;
+    document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
+  })
+  order.three.addEventListener('click', function() {
+    torder++
+    $total += 12.95;
+    receipt += "General Tso's Chicken, ";
+    localStorage.setItem('order$', $total);
+    localStorage.setItem('order_total', torder);
+    localStorage.setItem('order', receipt);
+    document.getElementById('cartTn').innerHTML = torder;
+    document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
+  })
+  order.four.addEventListener('click', function() {
+    torder++
+    $total += 12.95;
+    receipt += "Teriyaki Chicken, ";
+    localStorage.setItem('order$', $total);
+    localStorage.setItem('order_total', torder);
+    localStorage.setItem('order', receipt);
+    document.getElementById('cartTn').innerHTML = torder;
+    document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
+  })
+  order.five.addEventListener('click', function() {
+    torder++
+    $total += 12.95;
+    receipt += "Dim Sum, ";
+    localStorage.setItem('order$', $total);
+    localStorage.setItem('order_total', torder);
+    localStorage.setItem('order', receipt);
+    document.getElementById('cartTn').innerHTML = torder;
+    document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
+  })
+  order.six.addEventListener('click', function() {
+    torder++
+    $total += 3.50;
+    receipt += "Boba Tea, ";
+    localStorage.setItem('order$', $total);
+    localStorage.setItem('order_total', torder);
+    localStorage.setItem('order', receipt);
+    document.getElementById('cartTn').innerHTML = torder;
+    document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
+  })
+  order.seven.addEventListener('click', function() {
+    torder++
+    $total += 2.50;
+    receipt += "Tea, ";
+    localStorage.setItem('order$', $total);
+    localStorage.setItem('order_total', torder);
+    localStorage.setItem('order', receipt);
+    document.getElementById('cartTn').innerHTML = torder;
+    document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
+  })
+  order.eight.addEventListener('click', function() {
+    torder++
+    $total += 1.00;
+    receipt += "Soda, ";
+    localStorage.setItem('order$', $total);
+    localStorage.setItem('order_total', torder);
+    localStorage.setItem('order', receipt);
+    document.getElementById('cartTn').innerHTML = torder;
+    document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
   })
 }
 
