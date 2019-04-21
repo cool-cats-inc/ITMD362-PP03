@@ -8,8 +8,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 /* 5:6 minor third ratio, 1.2 */
 html {
-  font-size: 1em; /* 18px/18px*/
-  line-height: 1.611em;/* 29px/18px*/
+  font-size: 18px; /* Setting base em unit standards */
+  line-height: 29px;
 }
 a{
   line-height: 0;
