@@ -111,7 +111,9 @@ main {
     font-size: 1em;
     padding-left: 1em;
   }
-
+  .wrapper {
+    grid-template-columns:20% 60% 20%;
+  }
 }
 @media screen and (min-width: 960px) {
   main{
@@ -174,9 +176,6 @@ main {
   .menutitles {
     font-size: 1.22222222em;
     padding-left: 1em;
-  }
-  .wrapper {
-    grid-template-columns:20% 70% 10%;
   }
 }
 
