@@ -109,15 +109,16 @@ main {
   grid-template-columns: 40% 40% 20%;
   margin: auto;
   margin-bottom: 20px;
-  background: lightgrey;
+  background: #f4b342;
 }
-.wrapper p, .wrapper label, .wrapper figure, .wrapper figcaption{
-  padding: 0.1111111em; /* 2px/18px */
+.wrapper p, .wrapper label, .wrapper figure, .wrapper figcaption, .wrapper h3{
+  padding: 0.8em; /* 2px/18px */
   margin: auto;
 }
 .menuImg{
   justify-content: center;
   width: 10em;
+  margin: auto;
 }
 .locations{
   margin:auto;
@@ -132,7 +133,7 @@ h1{
     width: 80%;
   }
   .wrapper{
-    background: lightblue;
+    background: #f4b342;
   }
 
 }
@@ -141,7 +142,7 @@ h1{
     width: 80%;
   }
   .wrapper{
-    background: pink;
+    background: #f4b342;
   }
   .images{
     justify-content: left;
