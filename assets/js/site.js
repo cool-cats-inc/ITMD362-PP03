@@ -1,4 +1,4 @@
-localStorage.clear();
+//localStorage.clear();
 var $total = localStorage.getItem('order$');
 var torder = localStorage.getItem('order_total');
 var receipt = localStorage.getItem('order');
