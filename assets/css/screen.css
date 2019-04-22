@@ -30,27 +30,27 @@ body {
   line-height: 1.1188271528em /* 1.611111111 / 1.2 = / 1.2*/
 }
 h1{
-  font-size: 1.222222222em;
-  line-height: 1.31818182em;
-  margin-top: 0.93548387em;
-  margin-bottom: 1.11538462em;
+  font-size: 1.222222222em;/*21.999px/18px */
+  line-height: 1.31818182em;/*23.72727276px /18px */
+  margin-top: 0.93548387em;/* 16.83870966px/ 18px*/
+  margin-bottom: 1.11538462em;/* 16.143px/18px*/
 }
 h2{
-  font-size: 1em;
+  font-size: 1em;/* 18px/18px */
   line-height: 1.11538462em;/* 16.143px/18px*/
   margin-top: 1.11538462em;/* 16.143px/18px*/
   margin-bottom: 1.11538462em;/* 16.143px/18px*/
 }
 h3{
   font-size: 0.833333333em; /* 1 / 1.2 */
-  line-height: 1.11538462em;
-  margin-top: 1.11538462em;
+  line-height: 1.11538462em;/* 16.143px/18px*/
+  margin-top: 1.11538462em;/* 16.143px/18px*/
   margin-bottom: 0em;/* 0px/18px*/
 }
 h4 {
   font-size: 1em;/* 18px/18px*/
-  line-height: 1.11538462em;/* 29px/18px*/
-  margin-top: 1.11538462em;/* 29px/18px*/
+  line-height: 1.11538462em;/* 16.143px/18px*/
+  margin-top: 1.11538462em;/* 16.143px/18px*/
   margin-bottom: 0em;/* 0px/18px*/
 }
 main {
@@ -58,10 +58,10 @@ main {
   margin: auto;
 }
 #head{
-  font-size: 1.222222em;
-  border: 0.1em ridge;
+  font-size: 1.222222em;/*21.999px/18px */
+  border: 0.1em ridge;/*1.8px/18px */
   text-shadow: 0.15em 0.15em black;/* 2.7px/18px*/
-  padding-bottom: 1em;/* 16.143px/18px*/
+  padding-bottom: 1em;/* 18px/18px*/
   text-align: center;
   background-color: #F86C00;
   color: white;
@@ -73,20 +73,20 @@ main {
 }
 #navigation li{
   display: inline;
-  padding: 0em 1em 0em 1em;
+  padding: 0em 1em 0em 1em;/*18px/18px */
 }
 #cartT {
-  margin: 1em 1em 0em 1em;
+  margin: 1em 1em 0em 1em;/*18px/18px */
 }
 #cartC {
-  margin: 0em 1em 1em 1em;
+  margin: 0em 1em 1em 1em;/*18px/18px */
 }
 #order_input{
-  width: 5em;
+  width: 5em;/* 90px/18px*/
   float: left;
 }
 #Rsummary {
-  width: 11em;
+  width: 11em;/*198px / 18px */
 }
 .wrapper{
   padding: 0;
@@ -104,28 +104,28 @@ main {
   padding: 0;
 }
 .menuImg{
-  padding: 1em;
-  width: 5em;
+  padding: 1em; /* 18px/18px*/
+  width: 5em; /*90px/18px*/
 }
 .locations img{
   width: 90%;
 }
 .menutitles {
-  font-size: 0.894em;
-  padding-left: 0.894em;
+  font-size: 0.894em;/* 16.092px/ 18px*/
+  padding-left: 0.894em;/* 16.092px/ 18px*/
 }
 @media screen and (min-width: 640px) {
 
   .menutitles {
-    font-size: 1em;
-    padding-left: 1em;
+    font-size: 1em; /*18px/18px*/
+    padding-left: 1em;/*18px/18px*/
   }
   .wrapper {
     grid-template-columns:20% 60% 20%;
   }
   .wrapper label input{
     padding: 0 0.555em 0 0.555em; /* 10px/18px */
-    font-size: 1em;
+    font-size: 1em;/*18px/18px*/
   }
 }
 @media screen and (min-width: 960px) {
@@ -134,31 +134,31 @@ main {
   }
   body {
     background-color: #F8A200;
-    font-size: 1.2em;/* 18px/18px*/
-    line-height: 1.6111111em;/* 29px/18px*/
+    font-size: 1.2em;/* 21.6px/18px*/
+    line-height: 1.6111111em;/* 28.98px / 18px*/
   }
   h1{
-    font-size: 1.7222222em;
-    line-height: 1.87096774em;
-    margin-top: 0.93548387em;
-    margin-bottom: 1.87096774em;
+    font-size: 1.7222222em;/*30.9999996px/18px */
+    line-height: 1.87096774em;/* 33.67741932px/18px*/
+    margin-top: 0.93548387em;/* 16.83870966px/ 18px*/
+    margin-bottom: 1.87096774em;/* 33.67741932px/18px*/
   }
   h2{
-    font-size: 1.4444444em;
+    font-size: 1.4444444em; /* 25.9992px/18px*/
     line-height: 1.11538462em;/* 16.143px/18px*/
     margin-top: 1.11538462em;/* 16.143px/18px*/
     margin-bottom: 1.11538462em;/* 16.143px/18px*/
   }
   h3{
-    font-size: 1.22222222em;
-    line-height: 1.31818182em;
-    margin-top: 1.31818182em;
+    font-size: 1.22222222em;/*21.999px/18px */
+    line-height: 1.31818182em;/*23.72727276px /18px */
+    margin-top: 1.31818182em;/*23.72727276px /18px */
     margin-bottom: 0em;/* 0px/18px*/
   }
   h4 {
     font-size: 1em;/* 18px/18px*/
-    line-height: 1.6111111em;/* 29px/18px*/
-    margin-top: 1.6111111em;/* 29px/18px*/
+    line-height: 1.6111111em;/* 28.98px / 18px*/
+    margin-top: 1.6111111em;/* 28.98px / 18px*/
     margin-bottom: 0em;/* 0px/18px*/
   }
   main {
@@ -166,8 +166,8 @@ main {
     margin: auto;
   }
   #head{
-    font-size: 2em;
-    border: 0.2em ridge;
+    font-size: 2em; /*36px/18px */
+    border: 0.2em ridge;/* 3.6px/18px*/
     text-shadow: 0.15em 0.15em black;/* 2.7px/18px*/
     padding-bottom: 1.115em;/* 16.143px/18px*/
   }
@@ -177,18 +177,18 @@ main {
   }
   #navigation li{
     display: inline;
-    padding: 0em 3em 0em 3em;
+    padding: 0em 3em 0em 3em; /*54px/18px */
   }
   .images{
-    width: 10em;
+    width: 10em;/*180px /18px */
     font-size: 1em;/* 18px/18px*/
   }
   .menuImg{
-    width: 10em;
+    width: 10em;/*180px/18px */
   }
   .menutitles {
-    font-size: 1.22222222em;
-    padding-left: 1em;
+    font-size: 1.22222222em;/*21.999px/18px */
+    padding-left: 1em;/* 18px/18px*/
   }
 }
 
