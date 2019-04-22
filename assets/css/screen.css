@@ -57,6 +57,21 @@ main {
   max-width: 90%;
   margin: auto;
 }
+textarea{
+  width: 20em;
+}
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #ac1a00;
+  border: none;
+  color: white;
+  padding: 0.2em;
+  margin: 0.2em;
+  text-decoration: none;
+  cursor: pointer;
+}
+input[type=text]{
+  width: 90%;
+}
 #head{
   font-size: 1.222222em;/*21.999px/18px */
   border: 0.1em ridge;/*1.8px/18px */
@@ -82,7 +97,7 @@ main {
   margin: 0em 1em 1em 1em;/*18px/18px */
 }
 #order_input{
-  width: 5em;/* 90px/18px*/
+  width: 80%;/* 90px/18px*/
   float: left;
 }
 #Rsummary {
@@ -90,12 +105,20 @@ main {
 }
 #checkout_input1 {
   display: none;
+  margin: auto;
 }
 #checkout_input2 {
   display: none;
+  margin: auto;
 }
+
 #final_summary {
   display: none;
+}
+#final_order_form {
+  max-width: 80%;
+  background-color: white;
+  padding: 1em;
 }
 .wrapper{
   padding: 0;
@@ -117,14 +140,21 @@ main {
   width: 5em; /*90px/18px*/
 }
 .locations img{
-  width: 90%;
+  width: 30%;
 }
 .menutitles {
   font-size: 0.894em;/* 16.092px/ 18px*/
   padding-left: 0.894em;/* 16.092px/ 18px*/
 }
 @media screen and (min-width: 640px) {
-
+  #head{
+    font-size: 2em;
+  }
+  #final_order_form {
+    max-width: 70%;
+    background-color: white;
+    padding: 1em;
+  }
   .menutitles {
     font-size: 1em; /*18px/18px*/
     padding-left: 1em;/*18px/18px*/
@@ -143,9 +173,8 @@ main {
   }
   body {
     background-color: #F8A200;
-    font-size: 1.2em;/* 21.6px/18px*/
+    font-size: 1em;/* 21.6px/18px*/
     line-height: 1.6111111em;/* 28.98px / 18px*/
-    padding-left: 1em; /*18px/18px */
   }
   h1{
     font-size: 1.7222222em;/*30.9999996px/18px */
@@ -171,9 +200,14 @@ main {
     margin-top: 1.6111111em;/* 28.98px / 18px*/
     margin-bottom: 0em;/* 0px/18px*/
   }
-  main {
-    max-width: 90%;
-    margin: auto;
+  input[type=button], input[type=submit], input[type=reset]  {
+    padding: 0.833333em;
+    margin: 0.6944444em;
+  }
+  #final_order_form {
+    max-width: 60%;
+    background-color: white;
+    padding: 1em;
   }
   #head{
     font-size: 2em; /*36px/18px */
@@ -190,11 +224,11 @@ main {
     padding: 0em 3em 0em 3em; /*54px/18px */
   }
   .images{
-    width: 7em;/*180px /18px */
+    max-width: 30%;/*180px /18px */
     font-size: 1em;/* 18px/18px*/
   }
   .menuImg{
-    width: 7em;/*180px/18px */
+    width: 6em;/*180px/18px */
   }
   .menutitles {
     font-size: 1.22222222em;/*21.999px/18px */
@@ -205,7 +239,25 @@ main {
     padding-left: 1em; /* 18px/18px*/
   }
 }
-
+@media screen and (min-width: 1200px) {
+  main {
+    font-size: 1.2222em;
+  }
+  #final_order_form {
+    max-width: 40%;
+    background-color: white;
+    padding: 1em;
+  }
+  input[type=text]{
+    height: 3em;
+  }
+  .images {
+    max-width: 40%;
+  }
+  .menuImg{
+    width: 10em;
+  }
+}
 /* ---FORM CSS---*/
 form label, form input{
   float: left;

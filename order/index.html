@@ -13,9 +13,8 @@
     <h1> Spicy Chicken</h1>
     <nav id="navigation">
         <ul>
-          <li><a href="../menu/">Menu</a></li>
           <li><a href="">Order</a></li>
-          <li><a href="../">Home</a></li>
+          <li><a href="../">Menu</a></li>
           <li><a href="../aboutus/">About Us</a></li>
         </ul>
     </nav>
@@ -25,7 +24,7 @@
     <p id="cartC"> Total Cost: $<b id="cartCn"></b></p>
   </section>
   <main>
-    <form>
+    <form id="order_form">
       <fieldset>
         <legend>Delivery Address</legend>
         <ul id="order_input">
@@ -47,7 +46,6 @@
           </li>
         </ul>
       </fieldset>
-    </form>
     <section>
       <ul id="Rsummary">
         <li> Items: </li>
@@ -56,7 +54,8 @@
     <section>
       <a href="../order_final/">
         <input type=button id="checkout1" name="checkout1" value="PROCEED TO CHECKOUT"/>
-    </section
+    </section>
+    </form>
   </main>
   <footer>
   </footer>
