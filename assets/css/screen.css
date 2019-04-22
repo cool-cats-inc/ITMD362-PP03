@@ -180,15 +180,19 @@ main {
     padding: 0em 3em 0em 3em; /*54px/18px */
   }
   .images{
-    width: 10em;/*180px /18px */
+    width: 7em;/*180px /18px */
     font-size: 1em;/* 18px/18px*/
   }
   .menuImg{
-    width: 10em;/*180px/18px */
+    width: 7em;/*180px/18px */
   }
   .menutitles {
     font-size: 1.22222222em;/*21.999px/18px */
     padding-left: 1em;/* 18px/18px*/
+  }
+  .wrapper p {
+    font-size: 1em;
+    padding-left: 1em;
   }
 }
 
