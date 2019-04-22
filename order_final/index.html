@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ITMD 362 Project Two</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/screen.css" />
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" />
+</head>
+<body>
+  <main id= "final_order_form">
+    <section>
+      <h3> Choose payment method</h3>
+        <input type="button" id="cash" name="cash" value="Cash" />
+        <input type="button" id="creditc" name="credit_card" value="Credit Card" />
+    </section>
+    <section>
+      <p>Cart Total: <b id="cartTn"></b></p>
+      <p> Total Cost: $<b id="cartCn"></b></p>
+      <p> Delivery Fee: $3.00 </p>
+      <p> Tax(10%): $<b id="tax"> </b></p>
+      <ul id="Rsummary">
+        <li> Items: </li>
+      </ul>
+    </section>
+    <ul id="checkout_input1">
+      <li>
+        <label for="firstN">First Name:</label>
+        <input type="text" name="firstN" id="firstN" />
+      </li>
+      <li>
+        <label for="lastN">Last Name:</label>
+        <input type="text" name="lastN" id="lastN" />
+      </li>
+      <li>
+        <label for="phoneN">Phone Number:</label>
+        <input type="text" name="phoneN" id="phoneN" />
+      </li>
+    </ul>
+    <ul id="checkout_input2">
+      <li>
+        <label for="cardN">Card Number:</label>
+        <input type="text" name="cardN" id="cardN" />
+      </li>
+      <li>
+        <label for="secureC">Security Code:</label>
+        <input type="text" name="secureC" id="secureC" />
+      </li>
+      <li>
+        <label for="zip2">Zip/Postal code:</label>
+        <input type="text" name="zip2" id="zip2" />
+      </li>
+    </ul>
+      <input type="button" id="checkout2" name="checkout2" value="CHECKOUT"/>
+      <section id="final_summary">
+        <p> Order complete! Please wait for your delivery.</p>
+        <ul>
+          <li> Address: <b id="address_S"> </b></li>
+          <li> Payment Method: <b id="pay_S"> </b></li>
+          <li> Items Ordered: <b id="summary_S"> </b></li>
+          <li> Total cost: $<b id="total_S"></b></li>
+        </ul>
+      </section>
+  </main>
+  <footer>
+  </footer>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

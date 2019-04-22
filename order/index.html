@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
   <link rel="stylesheet" href="../assets/css/screen.css" />
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Cagliostro" rel="stylesheet" />
 </head>
 <body>
   <header id="head">
@@ -13,19 +14,20 @@
     <nav id="navigation">
         <ul>
           <li><a href="">Order</a></li>
-          <li><a href="../">Home</a></li>
+          <li><a href="../">Menu</a></li>
           <li><a href="../aboutus/">About Us</a></li>
         </ul>
     </nav>
   </header>
   <section>
-    <p id="cartT"> Total Cart: </p>
-    <p id="cart$"> Total Cost: $</p>
+    <p id="cartT">Cart Total: <b id="cartTn"></b></p>
+    <p id="cartC"> Total Cost: $<b id="cartCn"></b></p>
   </section>
   <main>
-    <form>
+    <form id="order_form">
       <fieldset>
         <legend>Delivery Address</legend>
+<<<<<<< HEAD
         <label for="zip">Zip code</label>
         <input type="text" name="zip" id="zip" />
         <label for="city">City</label>
@@ -34,13 +36,38 @@
         <input type="text" name="state" id="state" />
         <label for="address">Address</label>
         <input type="text" name="address" id="address" />
+=======
+        <ul id="order_input">
+          <li>
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" />
+          </li>
+          <li>
+            <label for="zip">Zip code:</label>
+            <input type="text" name="zip" id="zip" />
+          </li>
+          <li>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" />
+          </li>
+          <li>
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state" />
+          </li>
+        </ul>
+>>>>>>> upstream/master
       </fieldset>
-    </form>
     <section>
       <ul id="Rsummary">
         <li> Items: </li>
       </ul>
     </section>
+    <section>
+      <a href="../order_final/">
+        <input type="button" id="checkout1" name="checkout1" value="PROCEED TO CHECKOUT"/>
+      </a>
+    </section>
+    </form>
   </main>
   <footer>
   </footer>
