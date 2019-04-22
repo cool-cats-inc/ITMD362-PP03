@@ -2,8 +2,8 @@
 var $total = localStorage.getItem('order$');
 var torder = localStorage.getItem('order_total');
 var receipt = localStorage.getItem('order');
-
-
+var payment = localStorage.getItem('payment');
+var address = localStorage.getItem('address');
 
 document.addEventListener('DOMContentLoaded' ,function() {
   console.log("DOM is loaded my dude");
@@ -26,12 +26,34 @@ if (typeof $total === 'string') {
   $total = Number.parseFloat($total);
 }
 
+function vphone(value){
+  var clean = clean_whitespace(value);
+  return (clean, /^\d{3}-\d{3}-\d{4}$/);
+}
+function vcard(value){
+  var clean = clean_whitespace(value);
+  return (clean,/^4[0-9]{12}(?:[0-9]{3})?$/);
+}
+function vsecurity(value){
+  var clean = clean_whitespace(value);
+  return (clean,/^[0-9]{3,4}$/);
+}
 
 document.getElementById('cartTn').innerHTML = torder;
 document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
 
 if(document.querySelector('#zip')) {
   document.getElementById('Rsummary').innerHTML += receipt;
+
+  document.querySelector('#checkout1').addEventListener('click', function() {
+      var zip = document.querySelector('#zip').value;
+      var city = document.querySelector('#city').value;
+      var address2 = document.querySelector('#address').value;
+      var state = document.querySelector('#state').value;
+      var address_all = address2 + ", " + city + ", " + state + ", " + zip;
+
+      localStorage.setItem('address', address_all);
+  })
 
 console.log(localStorage.getItem('order_total'));
 
@@ -93,6 +115,51 @@ if('fetch' in window) {
       }
   });
 }
+}
+if(document.querySelector('#checkout_input1')){
+
+  var control = 0;
+  var tax = $total *.10;
+  var grand_total = $total + tax + 3;
+
+  document.getElementById('Rsummary').innerHTML += receipt;
+  document.querySelector('#tax').innerHTML = tax.toFixed(2);
+
+  document.querySelector('#cash').addEventListener('click', function(){
+    control = 1;
+    payment = "Cash";
+    if(control === 1){
+      document.getElementById('checkout_input1').style.display = "block";
+      document.getElementById('checkout_input2').style.display = "none";
+    }
+    if(control === 2){
+      document.getElementById('checkout_input2').style.display = "block";
+      document.getElementById('checkout_input1').style.display = "block";
+    }
+  })
+  document.querySelector('#creditc').addEventListener('click', function(){
+    control = 2;
+    payment = "credit card";
+    if(control === 1){
+      document.getElementById('checkout_input1').style.display = "block";
+      document.getElementById('checkout_input1').style.display = "none";
+    }
+
+    if(control === 2){
+      document.getElementById('checkout_input2').style.display = "block";
+      document.getElementById('checkout_input1').style.display = "block";
+    }
+  })
+  document.querySelector('#checkout2').addEventListener('click', function(){
+
+    document.getElementById('final_summary').style.display = "block";
+    document.getElementById('address_S').innerHTML = address;
+    document.getElementById('summary_S').innerHTML = receipt;
+    document.getElementById('pay_S').innerHTML = payment;
+    document.getElementById('total_S').innerHTML = grand_total.toFixed(2);
+
+
+  })
 }
 if(document.querySelector('#order1')) {
   var order = {
@@ -187,5 +254,4 @@ if(document.querySelector('#order1')) {
     document.getElementById('cartCn').innerHTML = parseFloat($total).toFixed(2);
   })
 }
-
 });
