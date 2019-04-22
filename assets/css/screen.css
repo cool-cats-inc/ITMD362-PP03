@@ -81,6 +81,13 @@ main {
 #cartC {
   margin: 0em 1em 1em 1em;
 }
+#order_input{
+  width: 5em;
+  float: left;
+}
+#Rsummary {
+  width: 11em;
+}
 .wrapper{
   padding: 0;
   display: grid;

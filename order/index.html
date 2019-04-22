@@ -27,13 +27,25 @@
   <main>
     <form>
       <fieldset>
-        <legend>Delivery Adress</legend>
-        <label for="zip">Zip code</label>
-        <input type="text" name="zip" id="zip" />
-        <label for="city">City</label>
-        <input type="text" name="city" id="city" />
-        <label for="state">State</label>
-        <input type="text" name="state" id="state" />
+        <legend>Delivery Address</legend>
+        <ul id="order_input">
+          <li>
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" />
+          </li>
+          <li>
+            <label for="zip">Zip code:</label>
+            <input type="text" name="zip" id="zip" />
+          </li>
+          <li>
+            <label for="city">City:</label>
+            <input type="text" name="city" id="city" />
+          </li>
+          <li>
+            <label for="state">State:</label>
+            <input type="text" name="state" id="state" />
+          </li>
+        </ul>
       </fieldset>
     </form>
     <section>
@@ -41,6 +53,10 @@
         <li> Items: </li>
       </ul>
     </section>
+    <section>
+      <a href="../order_final/">
+        <input type=button id="checkout1" name="checkout1" value="PROCEED TO CHECKOUT"/>
+    </section
   </main>
   <footer>
   </footer>
