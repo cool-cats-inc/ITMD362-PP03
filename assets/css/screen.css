@@ -136,6 +136,7 @@ main {
     background-color: #F8A200;
     font-size: 1.2em;/* 21.6px/18px*/
     line-height: 1.6111111em;/* 28.98px / 18px*/
+    padding-left: 1em;
   }
   h1{
     font-size: 1.7222222em;/*30.9999996px/18px */
