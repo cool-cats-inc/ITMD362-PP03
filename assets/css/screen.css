@@ -136,7 +136,7 @@ main {
     background-color: #F8A200;
     font-size: 1.2em;/* 21.6px/18px*/
     line-height: 1.6111111em;/* 28.98px / 18px*/
-    padding-left: 1em;
+    padding-left: 1em; /*18px/18px */
   }
   h1{
     font-size: 1.7222222em;/*30.9999996px/18px */
@@ -192,8 +192,8 @@ main {
     padding-left: 1em;/* 18px/18px*/
   }
   .wrapper p {
-    font-size: 1em;
-    padding-left: 1em;
+    font-size: 1em; /*18px/18px */
+    padding-left: 1em; /* 18px/18px*/
   }
 }
 
