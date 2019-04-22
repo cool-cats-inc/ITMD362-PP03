@@ -12,15 +12,15 @@ html {
   line-height: 29px;
   font-family: "Cagliostro", Helvetica, Arial, sans-serif
 }
-a{
+a {
   line-height: 0;
-  color:white;
+  color: white;
   text-decoration: none;
 }
 p, ul, ol {
-  margin-top: 0em;/* 0px/18px*/
+  margin-top: 0;/* 0/18px*/
 }
-a:focus, a:hover{
+a:focus, a:hover {
   color: #560202;
   text-shadow: 0.15em 0.15em #F8A200;/* 2.7px/18px*/
 }
@@ -29,38 +29,38 @@ body {
   font-size: 0.694em;/* 1 /1.2 = 0.833333 / 1.2*/
   line-height: 1.1188271528em /* 1.611111111 / 1.2 = / 1.2*/
 }
-h1{
+h1 {
   font-size: 1.222222222em;/*21.999px/18px */
   line-height: 1.31818182em;/*23.72727276px /18px */
   margin-top: 0.93548387em;/* 16.83870966px/ 18px*/
   margin-bottom: 1.11538462em;/* 16.143px/18px*/
 }
-h2{
+h2 {
   font-size: 1em;/* 18px/18px */
   line-height: 1.11538462em;/* 16.143px/18px*/
   margin-top: 1.11538462em;/* 16.143px/18px*/
   margin-bottom: 1.11538462em;/* 16.143px/18px*/
 }
-h3{
+h3 {
   font-size: 0.833333333em; /* 1 / 1.2 */
   line-height: 1.11538462em;/* 16.143px/18px*/
   margin-top: 1.11538462em;/* 16.143px/18px*/
-  margin-bottom: 0em;/* 0px/18px*/
+  margin-bottom: 0;/* 0/18px*/
 }
 h4 {
   font-size: 1em;/* 18px/18px*/
   line-height: 1.11538462em;/* 16.143px/18px*/
   margin-top: 1.11538462em;/* 16.143px/18px*/
-  margin-bottom: 0em;/* 0px/18px*/
+  margin-bottom: 0;/* 0/18px*/
 }
 main {
   max-width: 90%;
   margin: auto;
 }
-textarea{
+textarea {
   width: 20em;
 }
-input[type=button], input[type=submit], input[type=reset]  {
+input[type="button"], input[type="submit"], input[type="reset"] {
   background-color: #ac1a00;
   border: none;
   color: white;
@@ -69,10 +69,10 @@ input[type=button], input[type=submit], input[type=reset]  {
   text-decoration: none;
   cursor: pointer;
 }
-input[type=text]{
+input[type="text"] {
   width: 90%;
 }
-#head{
+#head {
   font-size: 1.222222em;/*21.999px/18px */
   border: 0.1em ridge;/*1.8px/18px */
   text-shadow: 0.15em 0.15em black;/* 2.7px/18px*/
@@ -80,23 +80,23 @@ input[type=text]{
   text-align: center;
   background-color: #F86C00;
   color: white;
-  font-family: 'Permanent Marker', cursive, Helvetica,  Arial, sans-serif;
+  font-family: "Permanent Marker", cursive, Helvetica, Arial, sans-serif;
 }
-#head h1{
-  margin-top: 0em;/* 0px/18px*/
-  margin-bottom: 0em;/* 0px/18px*/
+#head h1 {
+  margin-top: 0;/* 0/18px*/
+  margin-bottom: 0;/* 0/18px*/
 }
-#navigation li{
+#navigation li {
   display: inline;
-  padding: 0em 1em 0em 1em;/*18px/18px */
+  padding: 0 1em 0 1em;/*18px/18px */
 }
 #cartT {
-  margin: 1em 1em 0em 1em;/*18px/18px */
+  margin: 1em 1em 0 1em;/*18px/18px */
 }
 #cartC {
-  margin: 0em 1em 1em 1em;/*18px/18px */
+  margin: 0 1em 1em 1em;/*18px/18px */
 }
-#order_input{
+#order_input {
   width: 80%;/* 90px/18px*/
   float: left;
 }
@@ -120,26 +120,26 @@ input[type=text]{
   background-color: white;
   padding: 1em;
 }
-.wrapper{
+.wrapper {
   padding: 0;
   display: grid;
-  grid-template-columns:30% 50% 20%;
+  grid-template-columns: 30% 50% 20%;
   background-color: #ffdb96;
   margin: auto;
   margin-bottom: 1.111111em; /* 20/18 =1.11111 */
 }
-.wrapper p, .wrapper label, .wrapper figure, .wrapper figcaption{
+.wrapper p, .wrapper label, .wrapper figure, .wrapper figcaption {
   padding: 0.1111111em; /* 2px/18px */
   margin: auto;
 }
-.wrapper label input{
+.wrapper label input {
   padding: 0;
 }
-.menuImg{
+.menuImg {
   padding: 1em; /* 18px/18px*/
   width: 5em; /*90px/18px*/
 }
-.locations img{
+.locations img {
   width: 30%;
 }
 .menutitles {
@@ -147,7 +147,7 @@ input[type=text]{
   padding-left: 0.894em;/* 16.092px/ 18px*/
 }
 @media screen and (min-width: 640px) {
-  #head{
+  #head {
     font-size: 2em;
   }
   #final_order_form {
@@ -160,15 +160,15 @@ input[type=text]{
     padding-left: 1em;/*18px/18px*/
   }
   .wrapper {
-    grid-template-columns:20% 60% 20%;
+    grid-template-columns: 20% 60% 20%;
   }
-  .wrapper label input{
+  .wrapper label input {
     padding: 0 0.555em 0 0.555em; /* 10px/18px */
     font-size: 1em;/*18px/18px*/
   }
 }
 @media screen and (min-width: 960px) {
-  main{
+  main {
     width: 90%;
   }
   body {
@@ -176,58 +176,58 @@ input[type=text]{
     font-size: 1em;/* 21.6px/18px*/
     line-height: 1.6111111em;/* 28.98px / 18px*/
   }
-  h1{
+  h1 {
     font-size: 1.7222222em;/*30.9999996px/18px */
     line-height: 1.87096774em;/* 33.67741932px/18px*/
     margin-top: 0.93548387em;/* 16.83870966px/ 18px*/
     margin-bottom: 1.87096774em;/* 33.67741932px/18px*/
   }
-  h2{
+  h2 {
     font-size: 1.4444444em; /* 25.9992px/18px*/
     line-height: 1.11538462em;/* 16.143px/18px*/
     margin-top: 1.11538462em;/* 16.143px/18px*/
     margin-bottom: 1.11538462em;/* 16.143px/18px*/
   }
-  h3{
+  h3 {
     font-size: 1.22222222em;/*21.999px/18px */
     line-height: 1.31818182em;/*23.72727276px /18px */
     margin-top: 1.31818182em;/*23.72727276px /18px */
-    margin-bottom: 0em;/* 0px/18px*/
+    margin-bottom: 0;
   }
   h4 {
     font-size: 1em;/* 18px/18px*/
     line-height: 1.6111111em;/* 28.98px / 18px*/
     margin-top: 1.6111111em;/* 28.98px / 18px*/
-    margin-bottom: 0em;/* 0px/18px*/
+    margin-bottom: 0;
   }
-  input[type=button], input[type=submit], input[type=reset]  {
+  input[type="button"], input[type="submit"], input[type="reset"] {
     padding: 0.833333em;
     margin: 0.6944444em;
   }
   #final_order_form {
     max-width: 60%;
     background-color: white;
-    padding: 1em;
+    padding: 1em;/*18px/18px*/
   }
-  #head{
+  #head {
     font-size: 2em; /*36px/18px */
     border: 0.2em ridge;/* 3.6px/18px*/
     text-shadow: 0.15em 0.15em black;/* 2.7px/18px*/
     padding-bottom: 1.115em;/* 16.143px/18px*/
   }
-  #head h1{
-    margin-top: 0em;/* 0px/18px*/
-    margin-bottom: 0em;/* 0px/18px*/
+  #head h1 {
+    margin-top: 0;/* 0/18px*/
+    margin-bottom: 0;/* 0/18px*/
   }
-  #navigation li{
+  #navigation li {
     display: inline;
-    padding: 0em 3em 0em 3em; /*54px/18px */
+    padding: 0 3em 0 3em; /*54px/18px */
   }
-  .images{
+  .images {
     max-width: 30%;/*180px /18px */
     font-size: 1em;/* 18px/18px*/
   }
-  .menuImg{
+  .menuImg {
     width: 6em;/*180px/18px */
   }
   .menutitles {
@@ -248,18 +248,18 @@ input[type=text]{
     background-color: white;
     padding: 1em;
   }
-  input[type=text]{
+  input[type="text"] {
     height: 3em;
   }
   .images {
     max-width: 40%;
   }
-  .menuImg{
+  .menuImg {
     width: 10em;
   }
 }
 /* ---FORM CSS---*/
-form label, form input{
+form label, form input {
   float: left;
   margin: auto;
   display: block;
