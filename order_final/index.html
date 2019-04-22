@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ITMD 362 Project Two</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, intitial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/screen.css" />
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" />
+</head>
+<body>
+  <main>
+    <section>
+      <h3> Choose payment method</h3>
+        <input type="radio" id="cash" name="cash" value="cash">
+        <label for="cash">Cash</label>
+        <input type="radio" id="creditc" name="credit_card" value="credit_card">
+        <label for="credit_card">Credit Card</label>
+    </section>
+    <section>
+      <p id="cartT">Cart Total: <b id="cartTn"></b></p>
+      <p id="cartC"> Total Cost: $<b id="cartCn"></b></p>
+      <ul id="Rsummary">
+        <li> Items: </li>
+      </ul>
+    </section>
+    <ul id="checkout_input1">
+      <li>
+        <label for="firstN">First Name:</label>
+        <input type="text" name="firstN" id="firstN" />
+      </li>
+      <li>
+        <label for="lastN">Last Name:</label>
+        <input type="text" name="lastN" id="lastN" />
+      </li>
+      <li>
+        <label for="pnumber">Phone Number:</label>
+        <input type="text" name="phoneN" id="phoneN" />
+      </li>
+    </ul>
+    <ul id="checkout_input2">
+      <li>
+        <label for="cardN">Card Number:</label>
+        <input type="text" name="cardN" id="cardN" />
+      </li>
+      <li>
+        <label for="secureC">Security Code:</label>
+        <input type="text" name="secureC" id="secureC" />
+      </li>
+      <li>
+        <label for="zip2">Zip/Postal code:</label>
+        <input type="text" name="zip2" id="zip2" />
+      </li>
+  </main>
+  <footer>
+  </footer>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
