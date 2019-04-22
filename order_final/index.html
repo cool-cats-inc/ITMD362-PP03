@@ -11,14 +11,14 @@
   <main>
     <section>
       <h3> Choose payment method</h3>
-        <input type="radio" id="cash" name="cash" value="cash">
-        <label for="cash">Cash</label>
-        <input type="radio" id="creditc" name="credit_card" value="credit_card">
-        <label for="credit_card">Credit Card</label>
+        <input type="button" id="cash" name="cash" value="Cash">
+        <input type="button" id="creditc" name="credit_card" value="Credit Card">
     </section>
     <section>
-      <p id="cartT">Cart Total: <b id="cartTn"></b></p>
-      <p id="cartC"> Total Cost: $<b id="cartCn"></b></p>
+      <p>Cart Total: <b id="cartTn"></b></p>
+      <p> Total Cost: $<b id="cartCn"></b></p>
+      <p> Delivery Fee: $3.00 </p>
+      <p> Tax(10%): $<b id="tax"> </b></p>
       <ul id="Rsummary">
         <li> Items: </li>
       </ul>
@@ -50,6 +50,17 @@
         <label for="zip2">Zip/Postal code:</label>
         <input type="text" name="zip2" id="zip2" />
       </li>
+    </ul>
+      <input type=button id="checkout2" name="checkout2" value="CHECKOUT"/>
+      <section id="final_summary">
+        <p> Order complete! Please wait for your delivery.</p>
+        <ul>
+          <li> Address: <b id="address_S"> </b></li>
+          <li> Payment Method: <b id="pay_S"> </b></li>
+          <li> Items Ordered: <b id="summary_S"> </b></li>
+          <li> Total cost: $<b id="total_S"></b></li>
+        </ul>
+      </section>
   </main>
   <footer>
   </footer>

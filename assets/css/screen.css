@@ -88,6 +88,15 @@ main {
 #Rsummary {
   width: 11em;/*198px / 18px */
 }
+#checkout_input1 {
+  display: none;
+}
+#checkout_input2 {
+  display: none;
+}
+#final_summary {
+  display: none;
+}
 .wrapper{
   padding: 0;
   display: grid;
