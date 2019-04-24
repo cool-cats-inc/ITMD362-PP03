@@ -89,12 +89,7 @@ input[type="text"] {
 }
 #navigation li {
   display: inline;
-<<<<<<< HEAD
-  padding: 0em 3em 0em 3em;
-<<<<<<< HEAD
-=======
   padding: 0 1em 0 1em;/*18px/18px */
->>>>>>> upstream/master
 }
 #cartT {
   margin: 1em 1em 0 1em;/*18px/18px */
@@ -118,39 +113,6 @@ input[type="text"] {
   margin: auto;
 }
 
-<<<<<<< HEAD
-=======
-}
-
-/*.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 0.778em 0.889em;
-  text-decoration: none;
-} */
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    align-items: center;
-  }
-  main {
-    max-width: 90%;
-    margin: auto;
-  }
-}
-
->>>>>>> upstream/test
-.wrapper{
-=======
 #final_summary {
   display: none;
 }
@@ -161,7 +123,6 @@ input[type="text"] {
 }
 .wrapper {
   padding: 0;
->>>>>>> upstream/master
   display: grid;
   grid-template-columns: 30% 50% 20%;
   background-color: #ffdb96;
@@ -186,13 +147,6 @@ input[type="text"] {
   font-size: 0.894em;/* 16.092px/ 18px*/
   padding-left: 0.894em;/* 16.092px/ 18px*/
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
->>>>>>> upstream/master
 @media screen and (min-width: 640px) {
   #head {
     font-size: 2em;
@@ -286,12 +240,6 @@ input[type="text"] {
     padding-left: 1em; /* 18px/18px*/
   }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 764e8472260c86226990997381a9b2467ec7ee91
->>>>>>> upstream/test
-=======
 @media screen and (min-width: 1200px) {
   main {
     font-size: 1.2222em;
@@ -317,4 +265,3 @@ form label, form input {
   margin: auto;
   display: block;
 }
->>>>>>> upstream/master
