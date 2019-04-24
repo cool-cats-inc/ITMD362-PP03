@@ -8,10 +8,18 @@ var address = localStorage.getItem("address");
 document.addEventListener("DOMContentLoaded" ,function() {
   console.log("DOM is loaded my dude");
   var location = {
+<<<<<<< HEAD
+    zip: document.querySelector('#zip'),
+    state: document.querySelector('#state'),
+    city: document.querySelector('#city'),
+    address: document.querySelector('#address')
+  }
+=======
     zip: document.querySelector("#zip"),
     state: document.querySelector("#state"),
     city: document.querySelector("#city")
   };
+>>>>>>> upstream/master
 
 if (torder === null) {
     torder = 0;
